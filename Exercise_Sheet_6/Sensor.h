@@ -13,20 +13,20 @@ class Sensor {
 public:
     virtual ~Sensor(){};
     virtual int checkSensor() = 0;
-
 };
 
-class Distancesensor: public Sensor {
+
+class Distancesensor:: public Sensor {
 public:
     virtual int checkSensor() override;
 };
 
-class Cliffsensor: public Sensor {
+class Cliffsensor:: public Sensor {
 public:
     virtual int checkSensor() override;
 };
 
-class Camerasensor: public Sensor {
+class Camerasensor:: public Sensor {
 public:
     virtual int checkSensor() override;
 };
